@@ -13,19 +13,19 @@ namespace EncryptDecryptBase64
 
         public static void Main()
         {
-            var originalText = "My very secret text that I want to hide from the World!";
+            var originalText = "My very secret text that I want to hide from the World!"; // Make sure the text you want to encrypt is longer than the Initialization Vector you use.
 
             // Encrypt the string to an array of bytes...
             var encrypted = Encrypt(originalText);
 
             // ... and then Decrypt it to see if it is still the same.
-            var roundTripText = Decrypt(encrypted);
+            var resultText = Decrypt(encrypted);
 
             // Display the original data and the decrypted data.
             Console.WriteLine($"Original:  {originalText}");
             Console.WriteLine($"Encrypted: {encrypted}");
-            Console.WriteLine($"Decrypted: {roundTripText}");
-            Console.WriteLine($"Same:      {originalText == roundTripText}");
+            Console.WriteLine($"Decrypted: {resultText}");
+            Console.WriteLine($"Same:      {originalText == resultText}");
         }
 
         private static string Encrypt(string plainText)

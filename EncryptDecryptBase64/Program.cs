@@ -8,8 +8,8 @@ namespace EncryptDecryptBase64
     class Program
     {
         // Common Initialization Vector and Encryption Key, shared between Encryptor and Decryptor.
-        private static readonly byte[] _InitializationVector = Encoding.ASCII.GetBytes("MySpecialVector1"); // must be 16 chars
-        private static readonly byte[] _EncryptionKey = Encoding.ASCII.GetBytes("MyEncryptionKey2"); // must be 16 chars
+        private static readonly byte[] _InitializationVector = Encoding.ASCII.GetBytes("MySpecialVector1");          // ToDo - Change this (16 characters)
+        private static readonly byte[] _EncryptionKey = Encoding.ASCII.GetBytes("MyLongEncryptionKey32Characters2"); // ToDo - Change this (32 characters)
 
         public static void Main()
         {

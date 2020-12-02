@@ -13,4 +13,4 @@ The project also decrypt the encrypted result string after converting it back fr
 
 ## License
 
-This project is licensed under MIT.
+This project is licensed under MIT. Check the full license [here](./LICENSE.md)

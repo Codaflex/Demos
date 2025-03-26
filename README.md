@@ -4,7 +4,7 @@ A collection of demos for basic functionality using .NET Core.
 
 ## Projects
 
-This repository contains a Visual Studio 2019 solution with several projects.
+This repository contains several sample projects.
 
 ### EncryptDecryptBase64
 
